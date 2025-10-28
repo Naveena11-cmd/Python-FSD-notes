@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #abc{color: red; background-color: yellow; text-align: center;}
+        p.pqr{color: tomato; background-color: cyan; text-align: right;}
+        /* effect from h3 is removed because p element is written hence effect is only seen on p tag */
+        .xyz{font-size: 60px;}
+        #mno{font-size: 60px;}
+    </style>
+</head>
+<body>
+    <p id="abc">Hello</p>
+    <p class="pqr">How are you</p>
+    <h3 class="pqr">I am fine</h3>
+    <p class="xyz">You say?</p>
+    <p class="pqr" id="abc">See who wins? id or class</p> 
+    <p class="pqr xyz">See both effect </p>
+    <!-- class priority left to right -->
+    <p id="abc mno">No effect</p>
+</body>
+</html>
