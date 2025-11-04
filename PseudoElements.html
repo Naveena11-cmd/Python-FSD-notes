@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p::first-line{
+        color: red;
+    }
+
+    p::first-letter{
+        color: blue;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .abc::before{
+        content: "***";
+    }
+
+    .abc::after{
+        content: "***";
+    }
+
+    ul li::marker{
+        color: brown;
+        content: '#';
+    }
+    
+    ::selection{
+        background-color: yellow;
+        color: green;
+    }
+</style>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum perspiciatis explicabo debitis voluptatem totam, ex sit incidunt, architecto laboriosam alias doloremque eum ut libero nemo ad suscipit numquam, iste soluta quia. Nulla culpa quae suscipit omnis necessitatibus commodi dolor aliquam aliquid repudiandae qui facere neque assumenda praesentium, quis eligendi ratione tempore, numquam laborum reiciendis explicabo, magni officiis tempora! Minima possimus optio architecto reiciendis blanditiis harum deserunt, asperiores fuga aperiam voluptatum iure nam. Iusto hic nulla incidunt magnam cum ullam, reprehenderit odio pariatur ipsa reiciendis debitis accusamus doloribus repellat ipsam cumque et. Quam quaerat nulla cum! Illum expedita excepturi saepe consequatur?</p>
+    <h1 class="abc">hello</h1>
+    <ul>
+        <li>ABC</li>
+        <li>PQR</li>
+    </ul>
+</body>
+</html>

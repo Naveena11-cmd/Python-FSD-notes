@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .outer {
+        background-color: cyan;
+        display: grid;
+        padding: 15px;
+        margin: 10px;
+        grid-template-columns: 200px 1fr 2fr;
+        grid-template-rows: 1fr 2fr;
+        gap: 10px;
+    }
+
+    .inner {
+        background-color: tomato;
+        text-align: center;
+
+        padding: 10px;
+        margin: 10px;
+    }
+</style>
+
+<body>
+    <div class="outer">
+        <div class="inner" style="grid-column: 2/3;">Box-1</div>
+        <div class="inner">Box-2</div>
+        <div class="inner">Box-3</div>
+        <div class="inner">Box-4</div>
+    </div>
+    <h1>observe me at display :none</h1>
+</body>
+</html>
+<!-- https://fsd-playground.web.app/ -->
+ <!-- psp@gmail.com -->
+  <!-- psp@1234 -->
