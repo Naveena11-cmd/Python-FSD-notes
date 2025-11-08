@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes demo3{
+                0%{background-color: red; top: 0px; left: 0px;}
+                50%{background-color: orange; border-radius: 50%; top: 500px; left: 500px;}
+                100%{background-color: red; top: 0px; left: 1000px;}
+        }
+        div{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            animation-name: demo3;
+            animation-duration: 5s;
+            animation-delay: 0s;
+            animation-direction: alternate;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
