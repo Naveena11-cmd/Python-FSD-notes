@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            position: relative;
+            background-color: bisque;
+        }
+    
+        .a {
+            background-image: conic-gradient(yellow, lightblue, pink, yellow);
+        }
+    
+        .b {
+            background-image: conic-gradient(from 90deg, yellow, lightblue, pink, yellow);
+        }
+    
+        .c {
+            background-image: conic-gradient(yellow 20%, lightblue 30%, pink 50%);
+        }
+        .d {
+            border-radius: 50%;
+            animation: demo5 4s linear 0s infinite alternate;
+            background-image: conic-gradient(yellow 0deg 90deg, lightblue 90deg 180deg, pink 180deg 270deg, lightgreen 270deg 360deg);
+        }
+
+        @keyframes demo5{
+            0%{transform: rotate(0deg); left: 0px;}
+            25%{transform: rotate(60deg);left: 250px;}
+            500%{transform: rotate(120deg);left: 500px;}
+            75%{transform: rotate(240deg);left: 750px;}
+            100%{transform: rotate(360deg);left: 1000px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+</body>
+</html>
