@@ -12,29 +12,30 @@
         <form>
             <h2>Customer detail</h2>
             <div class="row mb-3">
-            <div class="col-2"><label class="form-label">Name : </label></div>
-            <div class="col-10"><input type="text" class="form-control"  placeholder="Enter your Name"></div>
+                <div class="col-2"><label class="form-label">Name : </label></div>
+                <div class="col-10"><input type="text" class="form-control"  placeholder="Enter your Name"></div>
             </div>
 
             <div class="row mb-3">
-            <div class="col-2"><label class="form-label">Mobile Number : </label></div>
-            <div class="col-10"><input type="number" class="form-control"  placeholder="Enter your Mobile Number"></div>
+                <div class="col-2"><label class="form-label">Mobile Number : </label></div>
+                <div class="col-10"><input type="number" class="form-control"  placeholder="Enter your Mobile Number"></div>
             </div>
 
             <div class="row mb-3">
-            <div class="col-2"><label class="form-label">Address : </label></div>
-            <div class="col-10">
-            <textarea class="form-control" rows="3" placeholder="Enter any instructions..."></textarea>
-            </div>
+                <div class="col-2"><label class="form-label">Address : </label></div>
+                <div class="col-10">
+                    <textarea class="form-control" rows="3" placeholder="Enter any instructions..."></textarea>
+                </div>
             </div>
         
 
             <h4>Pizza Topping Details</h4>
-           <div class="mb-3 row ">
+            <div class="mb-3 row ">
                 <div class="col-4"><label class="form-label">Pizza Type : </label></div>
                 <div class="col-4"><input type="checkbox">Supreme</div> 
                 <div class="col-3">Quantity :<input type="number" min="1" max="10"> </div> 
             </div>
+
             <div class="mb-3 row">
                 <div class="col-4"></div>
                 <div class="col-4 "><input type="checkbox">Cheese</div> 
@@ -52,7 +53,7 @@
                     <input type="checkbox" name="size"class="form-check-input" value="s">
                     <label class="form-label">Small</label>
                 </div>
-                 <div  class="form-check form-check-inline">
+                <div  class="form-check form-check-inline">
                     <input type="checkbox" name="size"class="form-check-input" value="m">
                     <label class="form-label">Medium</label>
                 </div>
@@ -62,9 +63,9 @@
                 </div>
             </div>
 
-            <div class="mb-3">
-                <label class="form-label">Pizza Sauce : </label>
-                <div class="form-group">
+            <div class="mb-3 row">
+                <label class="form-label col-2">Pizza Sauce : </label>
+                <div class="form-group col-10">
                     <select class="form-select">
                         <option selected disabled hidden>--Sauce Type--</option>
                         <option>Tomato</option>
@@ -93,12 +94,15 @@
 
             <div class="mb-3 row">
                 <div class="col-2">
-        <label class="form-label">Delivery Instructions :</label>
-    </div>
-    <div class="col-10">
-        <textarea class="form-control" rows="3" placeholder="Enter any instructions..."></textarea>
-    </div>
+                    <label class="form-label">Delivery Instructions :</label>
+                </div>
+            <div class="col-10">
+                <textarea class="form-control" rows="3" placeholder="Enter any instructions..."></textarea>
             </div>
+        </div>
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-info">Send my order</button>
         </form>
     </div>
 </body>
