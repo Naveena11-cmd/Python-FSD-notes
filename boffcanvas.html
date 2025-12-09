@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <a href="#oc" data-bs-toggle="offcanvas" class="btn btn-info">Product list</a>
+    <div class="offcanvas offcanvas-start" id="oc">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title">My product list</h3>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur labore, sit ea modi minus iusto facere minima nihil aperiam reiciendis fuga accusamus odit sequi neque enim exercitationem dicta placeat quibusdam?
+        </div>
+        <img src="food.jfif" class="w-100 h-auto">
+    </div>
+
+    <br>
+    <br>
+    
+  <button href="#oc1" data-bs-toggle="offcanvas">Notification</button>
+    <div class="offcanvas offcanvas-top" id="oc1">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title">Notifications</h3>
+            <button class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="oc1"></button>
+        </div>
+        <div class="offcanvas-body bg-warning">You received one notification</div>
+    </div>
+</body>
+</html>
