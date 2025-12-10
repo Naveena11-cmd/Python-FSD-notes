@@ -9,56 +9,56 @@
 </head>
 <body>
     <div class="container bg-light">
-        <form>
+        <form class="needs-validation">
             <h2>Customer detail</h2>
             <div class="row mb-3">
                 <div class="col-2"><label class="form-label">Name : </label></div>
-                <div class="col-10"><input type="text" class="form-control"  placeholder="Enter your Name"></div>
+                <div class="col-10"><input type="text" class="form-control"  placeholder="Enter your Name" required></div>
             </div>
 
             <div class="row mb-3">
                 <div class="col-2"><label class="form-label">Mobile Number : </label></div>
-                <div class="col-10"><input type="number" class="form-control"  placeholder="Enter your Mobile Number"></div>
+                <div class="col-10"><input type="text" class="form-control"  placeholder="Enter your Mobile Number" required minlength="10" maxlength="10"></div>
             </div>
 
             <div class="row mb-3">
                 <div class="col-2"><label class="form-label">Address : </label></div>
                 <div class="col-10">
-                    <textarea class="form-control" rows="3" placeholder="Enter any instructions..."></textarea>
+                    <textarea class="form-control" rows="3" placeholder="Enter your Address " required></textarea>
                 </div>
             </div>
+            
         
-
             <h4>Pizza Topping Details</h4>
             <div class="mb-3 row ">
                 <div class="col-4"><label class="form-label">Pizza Type : </label></div>
-                <div class="col-4"><input type="checkbox">Supreme</div> 
-                <div class="col-3">Quantity :<input type="number" min="1" max="10"> </div> 
+                <div class="col-4"><input type="checkbox" required>Supreme</div> 
+                <div class="col-3">Quantity : <input type="number" min="1" max="10"> </div> 
             </div>
 
             <div class="mb-3 row">
                 <div class="col-4"></div>
-                <div class="col-4 "><input type="checkbox">Cheese</div> 
-                <div class="col-3">Quantity :<input type="number" min="1" max="10"> </div>
+                <div class="col-4 "><input type="checkbox" required>Cheese</div> 
+                <div class="col-3">Quantity : <input type="number" min="1" max="10"> </div>
             </div>
             <div class="mb-3 row">
                 <div class="col-4"></div>
-                <div class="col-4 "><input type="checkbox">Veg</div> 
-                <div class="col-3">Quantity :<input type="number" min="1" max="10"> </div>
+                <div class="col-4 "><input type="checkbox" required>Veg</div> 
+                <div class="col-3">Quantity : <input type="number" min="1" max="10"> </div>
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Pizza Size : </label>
                 <div  class="form-check form-check-inline">
-                    <input type="checkbox" name="size"class="form-check-input" value="s">
+                    <input type="checkbox" name="size" class="form-check-input" >
                     <label class="form-label">Small</label>
                 </div>
                 <div  class="form-check form-check-inline">
-                    <input type="checkbox" name="size"class="form-check-input" value="m">
+                    <input type="checkbox" name="size" class="form-check-input" >
                     <label class="form-label">Medium</label>
                 </div>
-                 <div  class="form-check form-check-inline">
-                    <input type="checkbox" name="size"class="form-check-input" value="l">
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" name="size" class="form-check-input" >
                     <label class="form-label">Large</label>
                 </div>
             </div>
@@ -103,6 +103,7 @@
 
         <div class="mb-3">
             <button type="submit" class="btn btn-info">Send my order</button>
+        </div>
         </form>
     </div>
 </body>
