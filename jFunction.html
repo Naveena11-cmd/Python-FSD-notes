@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript" type="text/javascript">
+        // function fun(){
+        //     alert("You clicked")
+        // }
+
+        // function fun2(fname,lname){
+        //     document.write("Welcome "+fname+" "+lname)
+        // }
+
+        // implicit
+        (function (){
+            alert("will trigger automatically")
+        })()
+
+        // explicit
+        function add(a,b){
+            return a+b
+        }
+        let result=add(5,10)
+        console.log(result)
+        console.log("----------")
+
+        function info(fn,ln){
+            var full=fn+" "+ln
+            return full
+        }
+        function hello(){
+            document.write(info('a','b'))
+        }
+
+    </script>
+</head>
+<body>
+    <!-- <input type="button" value="click me" onclick="fun()"> -->
+    <!-- <input type="button" value="login" onclick="fun2('ABC','PQR')"> -->
+    <input type="button" value="click" onclick="hello()">
+</body>
+</html>
