@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript" type="text/javascript">
+        const students=[{name:"a",fsd:85},{name:"b",fsd:"abc"},{name:"c",fsd:93},]
+        function gradeStudents(students){
+            let summary=" "
+            for (let s of students){
+                let marks=prompt(`Enter marks for ${s.name}`)
+                if(marks===""|| isNaN(marks)){
+                    alert('Invalid grade')
+                    continue
+                }
+                s.fsd=Number(marks)
+                summary=summary+`${s.name}:${s,fsd}\n`
+            }
+            alert('FSD marks summar : \n ${summary}')
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
