@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Text1</p>
+    <p>Text2</p>
+    <p>Text3</p>
+    <input type="button" value="change all" onclick="fun()">
+    <script language="javascript" type="text/javascript">
+        function fun(){
+            b=document.querySelectorAll("p")
+            for(var i=0;i<b.length;i++)
+            {
+                b[i].style.backgroundColor="green"
+                b[i].style.fontSize="50px"
+                b[i].style.color="white"
+            }
+        }
+    </script>
+</body>
+</html>
