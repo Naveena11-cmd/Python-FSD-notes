@@ -1,27 +1,61 @@
-<!-- add, sub, mul, div(should not be 0) : switch case, check NaN -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script language="javascript" type="text/javascript">
-        function calc()
-        {
-            let a=Number(prompt("Enter 1st number : "))
-            let b=Number(prompt("Enter 2nd number : "))
-            // let sum=a+b
-            // console.log(sum)
-
-            alert(`Sum = ${a+b}
-                Sub = ${a-b}
-                Mul = ${a*b}
-                Div = ${a/b}`)
-        }
-        calc()
-    </script>
+    <title>Basic Calculator</title>
 </head>
 <body>
-    
+
+<h2>Basic Calculator</h2>
+
+<script>
+    let a = Number(prompt("Enter 1st number:"));
+    let b = Number(prompt("Enter 2nd number:"));
+
+    let choice = Number(prompt(
+        "Choose operation:\n" +
+        "1. Add\n" +
+        "2. Subtract\n" +
+        "3. Multiply\n" +
+        "4. Divide"
+    ));
+
+    let result;
+
+    // Check NaN
+    if (isNaN(a) || isNaN(b) || isNaN(choice)) {
+        alert("Please enter valid numbers and choice");
+    } else {
+        switch (choice) {
+            case 1:
+                result = a + b;
+                alert("Result = " + result);
+                break;
+
+            case 2:
+                result = a - b;
+                alert("Result = " + result);
+                break;
+
+            case 3:
+                result = a * b;
+                alert("Result = " + result);
+                break;
+
+            case 4:
+                if (b === 0) {
+                    alert("Division by zero is not allowed");
+                } else {
+                    result = a / b;
+                    alert("Result = " + result);
+                }
+                break;
+
+            default:
+                alert("Invalid choice! Choose between 1 to 4");
+        }
+    }
+</script>
+
 </body>
 </html>
