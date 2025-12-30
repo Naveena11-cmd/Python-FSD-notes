@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 onmousedown="down()" id="test">mouse down with function</h2>
+    <h1 onclick="this.innerHTML = 'Text Changed! with inline js'">Click on this text!</h1>
+
+    <p onmouseup="fun(this,'hi')" id="t1">mouse over with function</p>
+    <p onmouseover="this.style.color='red'; this.innerHTML='mouse over'">mouse over with inline js</p>
+
+    <script language="javascript" type="text/javascript">
+        function down(){
+            document.getElementById("test").innerHTML="mouse down"
+        }
+
+        function fun(a,b){
+            a.innerHTML=b
+        }
+    </script>
+    
+</body>
+</html>

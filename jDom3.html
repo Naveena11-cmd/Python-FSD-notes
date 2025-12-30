@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <img id="b">
+    <input type="button" onclick="fun()" value="image">
+    <script language="javascript" type="text/javascript">
+        function fun(){
+            document.getElementById("b").setAttribute("src","b.jfif")
+        }
+    </script> -->
+
+    <img id="a" src="a.jpg">
+    <script language="javascript" type="text/javascript">
+        const img=document.querySelector("#a")
+        img.onclick=()=>{
+            img.setAttribute("src", img.getAttribute("src")==="a.jpg"?"b.jfif":"a.jpg")
+        }
+    </script>
+</body>
+</html>

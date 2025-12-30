@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis omnis harum hic debitis accusamus consequatur, iste aliquam culpa distinctio nisi cum error cupiditate vero amet, sunt pariatur nostrum facere eum?</p>
+    <input type="button" onclick="tc()" value="change">
+    <script language="javascript" type="text/javascript">
+        const t=document.querySelector("#a")
+        function tc(){
+            if(t.style.color==="black"){
+                t.style.color="maroon"
+                t.style.backgroundColor="beige"
+            }
+            else{
+                t.style.color="black"
+                t.style.backgroundColor=""
+            }
+        }
+    </script>
+</body>
+</html>

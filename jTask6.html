@@ -1,0 +1,13 @@
+<!-- 100 x 100 div box, light blue bg, onmousedown:bg-yellow text-click, click release: bg-pink, text-released  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div onmousedown="this.style.backgroundColor='yellow'; this.innerHTML='clicked'"  onmouseup="this.style.backgroundColor='pink'; this.innerHTML='released'" style="background-color: lightblue; height: 100px; width: 100px;"></div>
+    <div onmouseover="this.style='height=200%'; this.innerHTML='clicked'"  onmouseout="this.style.backgroundColor='pink'; this.innerHTML='released'" style="background-color: brown; height: 100px; width: 100px;"></div>
+</body>
+</html>
