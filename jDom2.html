@@ -6,18 +6,39 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- <p>HIIII</p> -->
+
     <p>Hello</p>
-    <p>HIIII</p>
+    <div>
+        <h1>h1</h1>
+        <p>para1</p>
+        <p>para2</p>
+    </div>
+
+    <h1>Hi</h1>
+    <p id="a1">Hello</p>
+    <input type="button" onclick="fun1()" value="click">
+
     <script language="javascript" type="text/javascript">
-        c=document.querySelectorAll("p")
-        // for(var i=0;i<c.length;i++)
+        // c=document.querySelectorAll("p")
+        // // for(var i=0;i<c.length;i++)
+        // // {
+        // //     c[i].style.color="red"
+        // // }
+
+        // for(let p of document.querySelectorAll("p"))
         // {
-        //     c[i].style.color="red"
+        //     p.style.color="red"
         // }
 
-        for(let p of document.querySelectorAll("p"))
-        {
-            p.style.color="red"
+        let y=document.querySelectorAll("div p")
+        for(let i of y){
+            i.style.color="blue"
+        }
+
+        function fun1(){
+            let i=document.getElementById("a1")
+            i.innerText="<b>How are you?</b>"
         }
     </script>
 </body>
