@@ -1,0 +1,57 @@
+<!-- T-1: add 3 text input fields and perform following task on them:
+1. in first text field  convert entered text into lowercase when the value of field is changed using onchange
+2. in 2nd change bg color to yellow when field gets focused using onfocus 
+along with change in text color to blue while typing using oninput
+3. in 3rd field convert entered text into uppercase when field loses the focus using onblur-->
+
+<!-- T-2 : Write js to handle following mouse events using functions 
+1. If mouse hover heading 'welcome 2026' it should turn yellow, if mouse goes out then bg color turns cyan
+2. if find button clicked then it shows date and time info (use new Date())
+3. if button name red is clicked then bg color of body should turn red and 
+if button named green is clicked then bg color of body should turn green-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body id="rg">
+        <!-- T-1 -->
+        <input type="text" onchange="this.value=this.value.toLowerCase()">
+        <input type="text" onfocus="this.style.backgroundColor='yellow'"
+            oninput="this.style.color='blue'">
+        <input type="text" onblur="this.value=this.value.toUpperCase()">
+
+        <!-- T-2 -->
+        <h1 onmouseover="f1()" onmouseout="f2()" id="b">Welcome 2026</h1>
+        <input type="button" value="find" onclick="f3()">
+        <p id="f1"></p>
+        
+        <input type="button" value="red" onclick="red()">
+        <input type="button" value="green" onclick="green()">
+        <script language="javascript" type="text/javascript">
+        function f1(){
+            document.getElementById("b").style.color='yellow'
+        }
+        function f2(){
+            document.getElementById("b").style.backgroundColor='brown'
+        }
+
+        function f3(){
+            let d1=new Date()
+            document.getElementById('f1').innerHTML=d1
+        }
+
+        function red(){
+            i=document.getElementById("rg")
+            i.bgColor='lightblue'
+        }
+
+        function green(){
+            i=document.getElementById("rg")
+            i.bgColor='lightgreen'
+        }
+    </script>
+    </body>
+</html>
