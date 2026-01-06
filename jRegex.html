@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="text" id="a">
+        <input type="submit" onclick="fun()">
+        <script language="javascript" type="text/javascript">
+        function fun(){
+            let p=/abc/
+            let u=document.getElementById('a').value
+            if(p.test(u)){
+                alert("Perfect")
+            }
+            else{
+                alert("Enter proper values")
+            }
+        }
+    </script>
+    </body>
+</html>
+<!-- 
+REGEX PATTERN
+1. /abc/ : case sensetive, abc should be together either in start/middle/end  
+2. /abc/i : case insensetive, abc should be together either in start/middle/end
+3. ^A : Should start with A
+4. A$ : should end with A
+5. * : /bo*/  should have b but , o is not compulsory
+6. + : can occur one or more times
+7. ? : can occur zero or one times
+8. \w : find word char or number allowed but not spl char [A-Z, a-z, 0-9]
+9. \W : find non word
+10. \d : find digit
+11. \D : all char except numbers
+12. [^abc] : a,b,c,ab,bc,ac,abc : not allowed but abcd or anything with a/b/c allowed
+13. [abc] : should have a/b/c
+14. [0-9]: there should be a number present from 0-9
+15. [^0-9] : alone number not allowed
+16. x|y : either x or y should be there
+-->
