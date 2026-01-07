@@ -1,0 +1,44 @@
+<!-- create a form with 3 fields : product,price, discount & save button. it should manage below requirements
+1. when user clicks save , it stores the enetered value into local storage
+2. after saving ,display message in alert("Data saved successfully") 
+3. add another button named remove discount that removes only discount field from local storage & display remaining data in console-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Product : <input type="text" placeholder="Enter product name" id="n">
+    <br>
+    Price : <input type="text" placeholder="Enter product price" id="p">
+    <br>
+    Discount : <input type="number" placeholder="Enter discount" id="d">
+    <br>
+    <br>
+    <button onclick="save()">Save</button>
+    <button onclick="remove()">Remove discount</button>
+
+    <script type="text/javascript" language="javascript">
+        function save(){
+            let product=document.getElementById('n').value
+            localStorage.setItem("product",product)
+
+            let price=document.getElementById('p').value
+            localStorage.setItem("price",price)
+
+            let discount=document.getElementById('d').value
+            localStorage.setItem("discount",discount)
+
+            alert("Data saved successfully!")
+        }
+
+        function remove(){
+            localStorage.removeItem("discount")
+            document.getElementById("d").innerHTML="user removed"
+        }
+    </script>
+</body>
+</html>

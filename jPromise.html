@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // setTimeout(()=>{
+        //     console.log("hello")
+        // },2000)
+
+        let order=new Promise((resolve,reject)=>{
+            let success=true
+            setTimeout(()=>{
+                if(success){
+                    resolve("order completed")
+                }
+                else{
+                    reject("order failed")
+                }
+            },2000)
+        })
+
+        order.then(result=>console.log(result))
+        order.catch(error=>console.log(error))
+        order.finally(()=>console.log("process finished"))
+    </script>
+</body>
+</html>

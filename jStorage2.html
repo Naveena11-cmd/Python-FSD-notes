@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="text" id="a">
+        <button onclick="saveu()">Save</button>
+        <button onclick="showu()">Show</button>
+        <button onclick="clearu()">Clear</button>
+        <p id="demo"></p>
+        <script type="text/javascript" language="javascript">
+        function saveu()
+        {
+            let user=document.getElementById('a').value
+            localStorage.setItem("username",user)
+            sessionStorage.setItem("username",user)
+        }
+
+        function showu(){
+            let a = localStorage.getItem("username")
+            let b = sessionStorage.getItem("username")
+            let user=document.getElementById('demo').innerHTML="local storage : "+a+"<br> session storage : " +b
+        }
+
+        function clearu(){
+            localStorage.clear()
+            sessionStorage.clear()
+            document.getElementById("demo").innerHTML="user removed"
+        }
+    </script>
+    </body>
+</html>
