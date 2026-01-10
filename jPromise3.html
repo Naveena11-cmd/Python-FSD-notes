@@ -1,0 +1,30 @@
+<!-- write a function that returns promise which resolves number after 1 sec, use a loop with async await to get values from 1 to 3
+print the double result of each value -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        function fd(num){
+            return new Promise((resolve)=>{
+            setTimeout(()=>{
+                resolve(num)},1000)
+        })
+        }
+
+        async function gD() {
+            for(let i=1;i<=3;i++)
+            {
+                let value=await fd(i)
+                console.log(value*2)
+            }
+        }
+    gD()
+    </script>
+</body>
+</html>
+
